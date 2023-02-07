@@ -18,7 +18,16 @@ module.exports = defineConfig({
           pathRewrite: {
             '^/api': ''
           }
+        },
+        //https://interface.music.163.com
+      '/foo': {
+        target: 'https://interface.music.163.com',//目标地址 请求的后台接口 
+        ws: true,
+        changeOrigin: true,
+        pathRewrite:{//路径重写
+          "^/foo":''
         }
+      },
       }
     }
 })
