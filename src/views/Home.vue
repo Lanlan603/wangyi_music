@@ -3,7 +3,7 @@
   <div>
     <!-- 1. 公共的顶部logo区域 -->
     <div class="header">
-
+      <img src="@/assets/images/logo.jpg" alt="">
     </div>
     <!-- 2. 选项卡 -->
     <van-tabs v-model="active">
